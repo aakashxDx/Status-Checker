@@ -59,7 +59,7 @@ async def main_aakashchecker():
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
                 statz += f"\n\n✔️ <u>Last Checked On:</u>\n**Date And time: {last_update}**\n**Time Zone: ({TIME_ZONE})**\n\n<i><u>♻️Refreshes In 10 Minutes Automatically.</u></i>\n\n<i>**๏ Powered By @Xavier_Bots ๏**</i>"
-                await app.edit_message_text(int(CHANNEL_ID), MESSAGE_ID, xxx_teletips)
+                await app.edit_message_text(int(CHANNEL_ID), MESSAGE_ID, statz)
                 print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(600)
                         
